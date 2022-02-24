@@ -45,3 +45,15 @@ class PaintWindow(QWidget):
         canvasPainter = QPainter(self)
         canvasPainter.drawImage(self.rect(), self.image, self.image.rect())
 
+
+class SPP(QWidget):
+    def __init__(self) -> None:
+        QWidget.__init__(self, None)
+        self.setFixedWidth(500)
+        font = QFont("Poppins")
+        font.setPixelSize(20)
+        self.drawWindow = PaintWindow(self)
+        label = QLabel(self)
+        label.setText("Drag the mouse to draw")
+        label.setAlignment(Qt.AlignCenter)
+
