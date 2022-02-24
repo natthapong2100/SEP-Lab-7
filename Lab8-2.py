@@ -56,4 +56,17 @@ class SPP(QWidget):
         label = QLabel(self)
         label.setText("Drag the mouse to draw")
         label.setAlignment(Qt.AlignCenter)
+        label.setFont(font)
+        label.setGeometry(0, 250, 500, 30)
+        self.clear_bt = QPushButton(self)
+        self.clear_bt.setText("Clear")
+        self.clear_bt.setFont(font)
+        self.clear_bt.setGeometry(0, 280, 500, 30)
+        self.clear_bt.clicked.connect(self.drawWindow.clear)
 
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    view = SPP()
+    view.show()
+    sys.exit(app.exec())
