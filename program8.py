@@ -5,5 +5,4 @@ print("Hello nat v2")
 
 print("Hello World")
 
-print("New")
-pass
+print("New lol")
