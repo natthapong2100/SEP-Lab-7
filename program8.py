@@ -5,4 +5,6 @@ print("Hello nat v2")
 
 print("Hello World")
 
-print("New lol")
+print("New loll")
+
+print()
